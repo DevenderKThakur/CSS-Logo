@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolverine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    #eyepatchone{
+        position: absolute;
+        background-color: #0E0E39;
+        width: 200px;
+        height: 110px;
+        top: 38%;
+        left: 45%;
+        border-radius: 100px 0;
+    }
+    #eyeone{
+        position: absolute;
+        background-color: white;
+        width: 80px;
+        height: 50px;
+        top: 38%;
+        left: 10%;
+        border-radius: 100px 0;
+    }
+    #eyepatchtwo{
+        position: absolute;
+        background-color: #0E0E39;
+        width: 200px;
+        height: 110px;
+        top: 38%;
+        right: 46%;
+        border-radius: 0 100px;
+    }
+    #eyetwo{
+        position: absolute;
+        background-color: white;
+        width: 80px;
+        height: 50px;
+        top: 38%;
+        right: 8%;
+        border-radius: 0 100px;
+    }
+</style>
+<body>
+    <div class="bg-[#373794] w-full min-h-screen flex flex-col justify-center items-center">
+        <div class="relative">
+            <div class="bg-[#F3AC3C] w-[200px] h-[200px] rounded-full relative z-10">
+                <div id="eyepatchone">
+                    <div id="eyeone"></div>
+                </div>
+                <div id="eyepatchtwo">
+                    <div id="eyetwo"></div>
+                </div>
+            </div>
+            <div class="bg-[#0E0E39] w-[180px] h-[200px] rounded-full absolute top-[29%] left-[6%] z-0">
+                <div class="bg-[#F3AC3C] w-[110px] h-[110px] absolute top-[55%] left-[20%] rounded-b-full">
+                    <div class="bg-white w-[90px] h-[40px] absolute top-[30%] left-[10%] rounded-full"></div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>
