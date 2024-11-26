@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skull Logo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    #triangle {
+        width: 0;
+        height: 0;
+        border-left: 30px solid;
+        border-right: 30px solid;
+        border-bottom: 80px solid #CAE5DC;
+        position: absolute;
+        top: 10.5rem;
+        left: 40%;
+        z-index: 1;
+    }
+</style>
+<body>
+    <div class="w-full min-h-screen bg-[#CAE5DC] flex flex-col justify-center items-center">
+        <div class="w-[300px] h-[300px] bg-black rounded-full relative">
+            <div class="absolute bg-[#CAE5DC] w-[100px] h-[50px] top-[9rem] left-[1.5rem] rounded-b-full rotate-[30deg] z-10"></div>
+            <div class="absolute bg-[#CAE5DC] w-[100px] h-[50px] top-[9rem] right-[1.5rem] rounded-b-full rotate-[-30deg] z-10"></div>
+            <div id="triangle"></div>
+            <div class="w-[200px] h-[60px] bg-black absolute top-[80%] left-[16%]"></div>
+        </div>
+        <div class="bg-[#CAE5DC] w-[200px] h-[200px] flex flex-row justify-evenly items-center">
+            <div class="bg-black h-full w-[30px]"></div>
+            <div class="bg-black h-full w-[30px]"></div>
+            <div class="bg-black h-full w-[30px]"></div>
+            <div class="bg-black h-full w-[30px]"></div>
+        </div>
+    </div>  
+</body>
+</html>
